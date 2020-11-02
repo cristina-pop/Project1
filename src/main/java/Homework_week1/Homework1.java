@@ -3,7 +3,7 @@ package Homework_week1;
 public class Homework1 {
 
     //    1. Calculate the sum of the first 100 numbers higher than 0
-    public static int calculateSum() {
+    int calculateSum() {
         int sum = 0;
 
         for (int i = 1; i < 101; i++) {
@@ -14,7 +14,7 @@ public class Homework1 {
     }
 
     //    2. Display the smallest number from an array of number
-    public static int smallestNumber() {
+    int smallestNumber() {
         int a[] = {78, 896, 543, 2, -43, 7645, 97, 0, 30};
         int smallest = a[0];
         int currentmin = a[0];
@@ -31,7 +31,7 @@ public class Homework1 {
     }
 
     //    3. Display the max digit from a number.
-    public static int maxDigit(int nr) {
+    int maxDigit(int nr) {
         int largest = 0;
         int rem;
         System.out.println("Number is: " + nr);
@@ -45,7 +45,7 @@ public class Homework1 {
     }
 
 //    4. Check if a number is palindrom( e.g palindrom 1221, 34143)
-    public static boolean isPalindrome(int number) {
+    static boolean isPalindrome(int number) {
         int palindrome = number;
         int reverse = 0;
         while (palindrome != 0) {
