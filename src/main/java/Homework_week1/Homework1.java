@@ -3,9 +3,8 @@ package Homework_week1;
 public class Homework1 {
 
     //    1. Calculate the sum of the first 100 numbers higher than 0
-    int calculateSum() {
+    static int calculateSum() {
         int sum = 0;
-
         for (int i = 1; i < 101; i++) {
             sum = sum + i;
             System.out.println("i = " + i + "; sum = " + sum);
@@ -14,11 +13,10 @@ public class Homework1 {
     }
 
     //    2. Display the smallest number from an array of number
-    int smallestNumber() {
+    static int smallestNumber() {
         int a[] = {78, 896, 543, 2, -43, 7645, 97, 0, 30};
         int smallest = a[0];
         int currentmin = a[0];
-
         for (int i = 0; i < a.length; i++) {
             if (a[i] < currentmin) {
                 currentmin = a[i];
@@ -31,7 +29,7 @@ public class Homework1 {
     }
 
     //    3. Display the max digit from a number.
-    int maxDigit(int nr) {
+    static int maxDigit(int nr) {
         int largest = 0;
         int rem;
         System.out.println("Number is: " + nr);
@@ -44,7 +42,7 @@ public class Homework1 {
         return largest;
     }
 
-//    4. Check if a number is palindrom( e.g palindrom 1221, 34143)
+    //    4. Check if a number is palindrom( e.g palindrom 1221, 34143)
     static boolean isPalindrome(int number) {
         int palindrome = number;
         int reverse = 0;
@@ -61,7 +59,4 @@ public class Homework1 {
             return false;
         }
     }
-//    5. Display all the prime numbers lower than a given number
-
-
 }
