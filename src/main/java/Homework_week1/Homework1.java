@@ -42,7 +42,7 @@ public class Homework1 {
         return largest;
     }
 
-    //    4. Check if a number is palindrom( e.g palindrom 1221, 34143)
+    //    4. Check if a number is palindrome( e.g palindrome 1221, 34143)
     static boolean isPalindrome(int number) {
         int palindrome = number;
         int reverse = 0;
