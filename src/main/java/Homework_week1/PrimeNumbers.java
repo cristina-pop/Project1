@@ -2,13 +2,11 @@ package Homework_week1;
 
 //    5. Display all the prime numbers lower than a given number
 
-public class PrimeNumbers {
-    public static String Primes(int maxCheck) {
+class PrimeNumbers {
+    static void Primes(int maxCheck) {
         int i;
-        int num = 0;
-        boolean isPrime = true;
+        boolean isPrime;
 
-        //Empty String
         String primeNumbersFound = "";
 
         //Start loop 1 to maxCheck
@@ -21,10 +19,10 @@ public class PrimeNumbers {
         System.out.println("Prime numbers from 1 to " + maxCheck + " are:");
         // Print prime numbers from 1 to maxCheck
         System.out.println(primeNumbersFound);
-        return primeNumbersFound;
+//        return primeNumbersFound;
     }
 
-    public static boolean CheckPrime(int numberToCheck) {
+    private static boolean CheckPrime(int numberToCheck) {
         int remainder;
         for (int i = 2; i <= numberToCheck / 2; i++) {
             remainder = numberToCheck % i;

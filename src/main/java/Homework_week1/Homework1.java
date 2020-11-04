@@ -1,20 +1,20 @@
 package Homework_week1;
 
-public class Homework1 {
+class Homework1 {
 
     //    1. Calculate the sum of the first 100 numbers higher than 0
-    static int calculateSum() {
+    static void calculateSum() {
         int sum = 0;
         for (int i = 1; i < 101; i++) {
             sum = sum + i;
             System.out.println("i = " + i + "; sum = " + sum);
         }
-        return sum;
+        //return sum;
     }
 
     //    2. Display the smallest number from an array of number
-    static int smallestNumber() {
-        int a[] = {78, 896, 543, 2, -43, 7645, 97, 0, 30};
+    static void smallestNumber(int [] a) {
+      //  int a[] = {78, 896, 543, 2, -43, 7645, 97, 0, 30};
         int smallest = a[0];
         int currentmin = a[0];
         for (int i = 0; i < a.length; i++) {
@@ -25,11 +25,11 @@ public class Homework1 {
             // System.out.println("a[i]= " + a[i] + "; Smallest number so far is: " + currentmin);
         }
         System.out.println("Smallest number in the array is: " + smallest);
-        return smallest;
+//        return smallest;
     }
 
     //    3. Display the max digit from a number.
-    static int maxDigit(int nr) {
+    static void maxDigit(int nr) {
         int largest = 0;
         int rem;
         System.out.println("Number is: " + nr);
@@ -39,7 +39,7 @@ public class Homework1 {
             nr = nr / 10;
         }
         System.out.println("Largest digit is: " + largest);
-        return largest;
+//        return largest;
     }
 
     //    4. Check if a number is palindrome( e.g palindrome 1221, 34143)
