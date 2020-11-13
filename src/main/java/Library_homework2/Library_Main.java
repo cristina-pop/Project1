@@ -2,7 +2,7 @@ package Library_homework2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Library {
+public class Library_Main {
     static List<Book> bookList = new ArrayList<Book>();
 
     static void addBook(Book b) {
