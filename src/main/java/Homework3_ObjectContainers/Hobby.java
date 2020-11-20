@@ -9,6 +9,12 @@ public class Hobby {
 
     List<HobbyAddress> hobbyAddress= new ArrayList<HobbyAddress>();
 
+    @Override
+    public String toString() {
+        return "HobbyAddress{" +
+                "adresa='" + name + " "  + hobbyAddress + '\'' +
+                '}';
+    }
     public Hobby(String name, int frequency) {
         this.name = name;
         this.frequency = frequency;
@@ -32,7 +38,7 @@ public class Hobby {
         }
         @Override
         public String toString() {
-            return "Hobby{" +
+            return "HobbyAddress{" +
                     "adresa='" + getAddress() + " " + getCountry() + '\'' +
                     '}';
         }
