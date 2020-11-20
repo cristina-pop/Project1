@@ -11,8 +11,8 @@ public class Hobby {
 
     @Override
     public String toString() {
-        return "HobbyAddress{" +
-                "adresa='" + name + " "  + hobbyAddress + '\'' +
+        return "Hobby {" +
+                "nume hobby ='" + name + "' " + "adresa hobby = "  + hobbyAddress + '\'' +
                 '}';
     }
     public Hobby(String name, int frequency) {
