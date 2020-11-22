@@ -5,7 +5,8 @@ import java.util.TreeSet;
 
 public class MainTreeSet {
     public static void main(String[] args) {
-        Set<Persoane> persons = new TreeSet<>();
+        NameComparator nameComparator = new NameComparator();
+        Set<Persoane> persons = new TreeSet<>(nameComparator);
         persons.add(new Persoane("Mihai", 35));
         persons.add(new Persoane("Ana", 23));
         persons.add(new Persoane("Liana", 42));
